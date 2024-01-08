@@ -1,4 +1,8 @@
 celery==5.3.4
 # Use the patched version of Kombu from GitHub until the fix is released
-git+https://github.com/celery/kombu.git@pr1838#egg=kombu
+git+https://github.com/celery/kombu.git@2a770f7adf186805f5313e761d5e8c195cbf5a84#egg=kombu
 redis==5.0.1
+
+# For our own use - testing
+pytest==6.2.4
+
