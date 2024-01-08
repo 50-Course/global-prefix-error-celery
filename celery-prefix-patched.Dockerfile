@@ -16,7 +16,7 @@ COPY . /app
 
 # Install dependencies
 
-RUN pip install --no-cache-dir -e /app/kombu
-RUN pip install --no-cache-dir -r requirements.txt
+# RUN pip install --no-cache-dir -e /app/kombu
+RUN pip install --no-cache-dir -r requirements-patched-celery.txt
 
 CMD ["celery", "-A", "main:app", "worker", "--loglevel=info"]

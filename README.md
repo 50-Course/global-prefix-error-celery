@@ -5,3 +5,4 @@ This repository aims to reproduce and perform root cause analysis of the product
 at Celery - Kombu.
 
 Ref: https://github.com/celery/kombu/issues/1809
+Associated patch: https://github.com/celery/kombu/pull/1838
