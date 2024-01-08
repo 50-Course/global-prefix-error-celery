@@ -7,4 +7,4 @@ COPY . /app
 # Install dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
-CMD ["python", "main.py"]
+CMD ["celery", "-A", "main:app", "worker", "--loglevel=info"]
